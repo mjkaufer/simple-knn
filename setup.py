@@ -20,6 +20,7 @@ if os.name == 'nt':
 
 setup(
     name="simple_knn",
+    requires=["torch"],
     ext_modules=[
         CUDAExtension(
             name="simple_knn._C",
